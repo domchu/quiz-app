@@ -12,5 +12,53 @@ body {
   background-color: #eec0c6;
   background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
   font-family: "Titillium Web", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quiz-container {
+  background-color: #ccc;
+  width: 600px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.quiz-header {
+  padding: 4rem;
+}
+
+h2 {
+  margin: 0;
+}
+
+ul li {
+  margin: 1rem 0;
+}
+
+button {
+  background-color: #e58c8a;
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  color: #fff;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  background-color: #6a1715;
 }
 /*# sourceMappingURL=styles.css.map */
