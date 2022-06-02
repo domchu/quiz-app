@@ -31,7 +31,12 @@ h2 {
 }
 ul li {
   margin: 1rem 0;
+  cursor: pointer;
 }
+ul li label {
+  cursor: pointer;
+}
+
 #a,
 #b,
 #c,

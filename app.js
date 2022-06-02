@@ -1,6 +1,6 @@
 const quizData = [
   {
-    question: "how old is Mr Dominic ?",
+    question: "How old is Mr Dominic ?",
     a: "12",
     b: "27",
     c: "45",
@@ -8,7 +8,7 @@ const quizData = [
     correct: "c",
   },
   {
-    question: "what is the most popular programming language in the world ?",
+    question: "What is the most popular programming language in the world ?",
     a: "javascript",
     b: "c++",
     c: "python",
@@ -16,12 +16,20 @@ const quizData = [
     correct: "a",
   },
   {
-    question: "who is the president of Nigeria ?",
+    question: "Who is the president of Nigeria ?",
     a: "Goodluck Jonathan",
     b: "Muhammedu Buhari",
     c: "ochu dominic",
     d: "peter Obi",
     correct: "b",
+  },
+  {
+    question: "What year was javascript launched ?",
+    a: "1994",
+    b: "1995",
+    c: "1996",
+    d: "1997",
+    currect: "b",
   },
 ];
 const questionEl = document.getElementById("question");
@@ -43,6 +51,9 @@ function loadQuiz() {
 }
 submitBtn.addEventListener("click", () => {
   currentQuiz++;
-
-  loadQuiz();
+  if (currentQuiz < quizData.length) {
+    loadQuiz();
+  } else {
+    alert("You finished, Get yourself a bottle of pure water");
+  }
 });
