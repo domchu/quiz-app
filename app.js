@@ -21,7 +21,7 @@ const quizData = [
     b: "4",
     c: "3",
     d: "2",
-    correct: "5",
+    correct: "a",
   },
   {
     question: "What year was javascript launched ?",
@@ -29,7 +29,7 @@ const quizData = [
     b: "1995",
     c: "1996",
     d: "1997",
-    currect: "b",
+    correct: "b",
   },
   {
     question:
@@ -38,24 +38,24 @@ const quizData = [
     b: "JSON",
     c: "CSS/API",
     d: "React.JS",
-    currect: "b",
+    correct: "b",
   },
   {
-    question: "What is the output of this code: console.log(4 === 1)",
+    question: "What is the output of this code: console.log(4 === 1) ?",
     a: "True",
     b: "False",
     c: "Both A & B",
     d: "None of the above",
-    currect: "a",
+    correct: "a",
   },
   {
     question:
-      "How do we refresh a page without ctrl+R, fn+F5 or click on refresh icon?",
+      "How do we refresh a page without ctrl+R, fn+F5 or click on refresh icon ?",
     a: "page.load()",
     b: "refresh.reload()",
     c: "location.load()",
     d: "all of the above",
-    currect: "c",
+    correct: "c",
   },
 ];
 
