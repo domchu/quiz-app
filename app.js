@@ -57,8 +57,34 @@ const quizData = [
     d: "all of the above",
     correct: "c",
   },
+  {
+    question: "What is the output of these code; console.log(true + true) ?",
+    a: "True",
+    b: "False",
+    c: "1",
+    d: "2",
+    correct: "d",
+  },
+  {
+    question:
+      "What is the output of these code; console.log([1, 2] == [1, 2]), console.log([1, 2] === [1, 2]) ?",
+    a: "True, True",
+    b: "False, True",
+    c: "False, False",
+    d: "False, True",
+    correct: "c",
+  },
+  {
+    question: "What is the output of these array; [1, 2, 3].pop() ?",
+    a: "3",
+    b: "[1, 2]",
+    c: "[1, 2, 3]",
+    d: "[3]",
+    correct: "b",
+  },
 ];
 
+// selecting all classes or parameter from the html file
 const quiz = document.getElementById("quiz");
 const answerEls = document.querySelectorAll(".answer");
 const questionEl = document.getElementById("question");
@@ -71,6 +97,7 @@ let currentQuiz = 0;
 let score = 0;
 loadQuiz();
 
+// loading all the questions to the Dom
 function loadQuiz() {
   deselectAnswers();
   const currentQuizData = quizData[currentQuiz];
@@ -81,7 +108,7 @@ function loadQuiz() {
   d_text.innerHTML = currentQuizData.d;
 }
 
-// checked for the correct answer
+// checked for the correct answer/select
 function getSelected() {
   let answer = undefined;
 
@@ -92,6 +119,7 @@ function getSelected() {
   });
   return answer;
 }
+// function to deselect the answer to the next question
 function deselectAnswers() {
   answerEls.forEach((answerEl) => {
     answerEl.checked = false;
@@ -109,7 +137,7 @@ submitBtn.addEventListener("click", () => {
     if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
-      quiz.innerHTML = `<h2>You answered correctly at   ${score}/${quizData.length} questions. <button onclick="location.reload()" style="margin-top:14px">Reload</button> </h2>`;
+      quiz.innerHTML = `<h2>You scored  ${score} out of  ${quizData.length} questions. <button onclick="location.reload()" style="margin-top:14px">Reload</button> </h2>`;
     }
   }
 });
