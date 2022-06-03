@@ -7,14 +7,15 @@
     <title>QuizApp</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="./app.js" defer></script>
+    <!-- <script src="./app.js" defer></script> -->
   </head>
   <body>
-    <div class="quiz-container">
+    <div class="quiz-container" id="quiz">
       <div class="quiz-header">
         <h2 id="question">Question text</h2>
         <ul>
           <li>
-            <input type="radio" id="a" name="answer" /><label
+            <input type="radio" id="a" name="answer" class="answer" /><label
               id="a_text"
               for="a"
               >question</label
@@ -22,7 +23,7 @@
           </li>
 
           <li>
-            <input type="radio" id="b" name="answer" /><label
+            <input type="radio" id="b" name="answer" class="answer" /><label
               id="b_text"
               for="b"
               >question</label
@@ -30,7 +31,7 @@
           </li>
 
           <li>
-            <input type="radio" id="c" name="answer" /><label
+            <input type="radio" id="c" name="answer" class="answer" /><label
               id="c_text"
               for="c"
               >question</label
@@ -38,7 +39,7 @@
           </li>
 
           <li>
-            <input type="radio" id="d" name="answer" /><label
+            <input type="radio" id="d" name="answer" class="answer" /><label
               id="d_text"
               for="d"
               >question</label

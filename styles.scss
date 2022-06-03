@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap");
+
+// @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');`
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +30,8 @@ body {
   padding: 4rem;
 }
 h2 {
+  padding: 1rem;
+  text-align: center;
   margin: 0;
 }
 ul li {
